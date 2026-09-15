@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>iPhone Duo · 可折叠设计</title>
+    <link rel="icon" href="data:," />
+  </head>
+  <body>
+    <header class="localnav"><a href="#" class="product-name">iPhone Duo</a><span>可折叠设计</span></header>
+    <main>
+      <section class="product-viewer" aria-labelledby="viewer-title">
+        <div class="heading"><p>换个角度，大有不同。</p><h1 id="viewer-title">展开，精彩的另一面。</h1></div>
+        <div class="viewer-wrapper">
+          <div class="product-viewer-canvas"></div>
+          <div class="viewer-hit-area" tabindex="0" role="group" aria-label="iPhone Duo 三维展示，拖动旋转，左右方向键折叠，R 键复位"></div>
+          <div class="loading" role="status"><span class="spinner"></span><span id="load-message">正在载入体验</span></div>
+          <button class="reset" aria-label="重置视角" title="重置视角">↺</button>
+        </div>
+        <div class="controls">
+          <p class="interaction-hint">拖动旋转，滑动开合。</p>
+          <div class="fold-control"><button data-fold="0">合上</button><input id="fold" type="range" min="0" max="1" step="0.001" value="0.3333" aria-label="展开程度" /><button data-fold="1">展开</button></div>
+          <div class="presets" aria-label="折叠姿态"><button data-fold="0" aria-pressed="false">合拢</button><button data-fold="0.3333" aria-pressed="true">可折叠设计</button><button data-fold="1" aria-pressed="false">完全展开</button></div>
+        </div>
+      </section>
+    </main>
+    <footer>iPhone Duo 交互展示 · 基于提供的页面资源还原</footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

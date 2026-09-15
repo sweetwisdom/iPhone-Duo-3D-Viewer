@@ -1,0 +1,9 @@
+node_modules/
+dist/
+test-results/
+*.har
+.imgs/
+.DS_Store
+*.log
+*.har
+reference
