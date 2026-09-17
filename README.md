@@ -9,7 +9,6 @@
 ![侧面细节](./.imgs/image-20260915193538891.png)
 
 ![合拢状态](./.imgs/image-20260915193621740.png)
-
 ## 功能
 
 - 真实 iPhone Duo glTF 模型与 81 轨 `Slider` 开合动画
@@ -29,7 +28,7 @@ npm install
 npm run dev
 ```
 
-终端会输出本地访问地址，通常是 `http://localhost:5173`。如需构建生产文件：
+终端会输出本地访问地址，默认 `http://localhost:5186`（`vite.config.js` 固定端口，`scripts/inspect.mjs` 依赖该端口）。如需构建生产文件：
 
 ```bash
 npm run build
